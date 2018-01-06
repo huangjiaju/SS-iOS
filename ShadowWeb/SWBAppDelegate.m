@@ -7,11 +7,12 @@
 //
 #import <Crashlytics/Crashlytics.h>
 
-#import "GZIP.h"
+#import "NSData+GZIP.h"
 #import "AppProxyCap.h"
 #import "SWBAppDelegate.h"
 
 #import "GCDWebServer.h"
+#import "GCDWebServerDataResponse.h"
 #import "SWBViewController.h"
 #import "ShadowsocksRunner.h"
 
