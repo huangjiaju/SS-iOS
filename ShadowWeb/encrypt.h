@@ -19,7 +19,7 @@ struct encryption_ctx {
 
 #define kShadowsocksMethods 13
 
-const char *shadowsocks_encryption_names[];
+extern const char *shadowsocks_encryption_names[];
 
 void encrypt_buf(struct encryption_ctx* ctx, unsigned char *buf, size_t *len);
 void decrypt_buf(struct encryption_ctx* ctx, unsigned char *buf, size_t *len);

@@ -1,0 +1,12 @@
+PODS:
+  - libsodium (1.0.12)
+
+DEPENDENCIES:
+  - libsodium (~> 1.0.3)
+
+SPEC CHECKSUMS:
+  libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
+
+PODFILE CHECKSUM: 102825aad461ff51fa410c8cc0bae131c5ced8bd
+
+COCOAPODS: 1.2.1
