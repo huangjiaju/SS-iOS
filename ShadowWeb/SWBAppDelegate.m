@@ -15,6 +15,7 @@
 #import "GCDWebServerDataResponse.h"
 #import "SWBViewController.h"
 #import "ShadowsocksRunner.h"
+#import "SWBProxyProtocol.h"
 
 #define kProxyModeKey @"proxy mode"
 
@@ -28,14 +29,16 @@ void polipo_exit();
 }
 
 - (void)updateProxyMode {
-    NSString *proxyMode = [[NSUserDefaults standardUserDefaults] objectForKey:kProxyModeKey];
-    if (proxyMode == nil || [proxyMode isEqualToString:@"pac"]) {
-        [AppProxyCap setPACURL:@"http://127.0.0.1:8090/proxy.pac"];
-    } else if ([proxyMode isEqualToString:@"global"]) {
-        [AppProxyCap setProxy:AppProxy_SOCKS Host:@"127.0.0.1" Port:1080];
-    } else{
-        [AppProxyCap setNoProxy];
-    }
+//    NSString *proxyMode = [[NSUserDefaults standardUserDefaults] objectForKey:kProxyModeKey];
+//    if (proxyMode == nil || [proxyMode isEqualToString:@"pac"]) {
+//        [AppProxyCap setPACURL:@"http://127.0.0.1:8090/proxy.pac"];
+//    } else if ([proxyMode isEqualToString:@"global"]) {
+//        [AppProxyCap setProxy:AppProxy_SOCKS Host:@"127.0.0.1" Port:10800];
+//    } else{
+//        [AppProxyCap setNoProxy];
+//    }
+    [SWBProxyProtocol setHost: @"127.0.0.1" Port: 10800];
+    [NSURLProtocol registerClass:[SWBProxyProtocol class]];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

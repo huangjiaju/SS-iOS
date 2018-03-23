@@ -23,6 +23,7 @@
 		602DB926200117A1000F528E /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 602DB91D200117A1000F528E /* GCDWebServerFileResponse.m */; };
 		602DB927200117A1000F528E /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 602DB91E200117A1000F528E /* GCDWebServerDataResponse.m */; };
 		602DB928200117A1000F528E /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 602DB920200117A1000F528E /* GCDWebServerStreamedResponse.m */; };
+		609BB54D2003BD7D008FEAF6 /* SWBProxyProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 609BB54C2003BD7D008FEAF6 /* SWBProxyProtocol.m */; };
 		6205309618D4443E00887D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621571AA16CF6BCB003D96B4 /* Foundation.framework */; };
 		6205309918D4443E00887D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205309818D4443E00887D3E /* main.m */; };
 		620530A518D4444E00887D3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629AC93F18B49C33001D2771 /* SystemConfiguration.framework */; };
@@ -271,6 +272,8 @@
 		602DB920200117A1000F528E /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
 		60820F7C1F18B38F00B86330 /* libcorecrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcorecrypto.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib/system/libcorecrypto.tbd; sourceTree = DEVELOPER_DIR; };
 		60820F801F18B4C800B86330 /* libSystem.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib/libSystem.tbd; sourceTree = DEVELOPER_DIR; };
+		609BB54B2003BD7D008FEAF6 /* SWBProxyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWBProxyProtocol.h; sourceTree = "<group>"; };
+		609BB54C2003BD7D008FEAF6 /* SWBProxyProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWBProxyProtocol.m; sourceTree = "<group>"; };
 		60E5BC101F18B9550091705B /* libk5crypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libk5crypto.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib/libk5crypto.tbd; sourceTree = DEVELOPER_DIR; };
 		60E5BC131F18B99D0091705B /* liblibsodium-OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblibsodium-OSX.a"; path = "../../../Library/Developer/Xcode/DerivedData/shadowsocks-esgpntghbaisemcuahnincjzggwl/Build/Products/Debug/libsodium-OSX/liblibsodium-OSX.a"; sourceTree = "<group>"; };
 		619DB6DDD1F03736C3231E20 /* Pods-libshadowsocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libshadowsocks.release.xcconfig"; path = "Pods/Target Support Files/Pods-libshadowsocks/Pods-libshadowsocks.release.xcconfig"; sourceTree = "<group>"; };
@@ -727,6 +730,8 @@
 				621571CE16CF6D19003D96B4 /* TabBar */,
 				621571B716CF6BCB003D96B4 /* SWBAppDelegate.h */,
 				621571B816CF6BCB003D96B4 /* SWBAppDelegate.m */,
+				609BB54B2003BD7D008FEAF6 /* SWBProxyProtocol.h */,
+				609BB54C2003BD7D008FEAF6 /* SWBProxyProtocol.m */,
 				621571C016CF6BCB003D96B4 /* SWBViewController.h */,
 				621571C116CF6BCB003D96B4 /* SWBViewController.m */,
 				621571AF16CF6BCB003D96B4 /* Supporting Files */,
@@ -1508,6 +1513,7 @@
 				602DB928200117A1000F528E /* GCDWebServerStreamedResponse.m in Sources */,
 				62D85A8E176DA6FC00FE5575 /* auth.c in Sources */,
 				62D85A90176DA6FC00FE5575 /* chunk.c in Sources */,
+				609BB54D2003BD7D008FEAF6 /* SWBProxyProtocol.m in Sources */,
 				62D85A91176DA6FC00FE5575 /* client.c in Sources */,
 				62D85A92176DA6FC00FE5575 /* config.c in Sources */,
 				62D85A95176DA6FC00FE5575 /* diskcache.c in Sources */,
